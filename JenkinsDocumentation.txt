@@ -1,0 +1,49 @@
+# **Simple CI/CD Pipeline with Jenkins and Docker**
+
+## **Project Overview**
+
+This project sets up a **CI/CD pipeline** using **Jenkins and Docker** for a **Node.js application**. 
+It automates code integration, testing, containerization, and deployment.
+
+## **Technologies Used**
+
+- **Jenkins** – Automates CI/CD
+- **Docker** – Containerizes the application
+- **Git & GitHub** – Version control
+- **Node.js & npm** – Application runtime and package manager
+- **AWS EC2** – Cloud deployment
+
+---
+
+## **CI/CD Pipeline Steps**
+
+1. **Code Commit** – Developer pushes code to GitHub.
+2. **Jenkins Trigger** – Detects changes and starts the pipeline.
+3. **Install & Test** – Runs `npm install`, lints code, and tests.
+4. **Build Docker Image** – Creates a Docker container.
+5. **Push Image** – Uploads the Docker image to Docker Hub.
+6. **Deploy App** – Runs the app on AWS EC2 or Kubernetes.
+
+---
+
+## **Setup Steps**
+
+### **1. Install Jenkins**
+
+- Install Jenkins and required plugins (`Git`, `Pipeline`, `Docker`).
+- Connect Jenkins with GitHub for automatic triggers.
+
+### **2. Create a Jenkins Pipeline**
+
+- Write a `Jenkinsfile` with:
+  1. **Clone Code** – Pulls from GitHub.
+  2. **Install Dependencies** – Runs `npm install`.
+  3. **Build Docker Image** – Creates and tags the image.
+  4. **Push to Docker Hub** – Uploads the image.
+  5. **Deploy App** – Deploys to AWS EC2 or Kubernetes.
+
+### **3. Use Docker for Deployment**
+
+- Install Docker on the Jenkins server.
+- Write a `Dockerfile` for containerization.
+- Deploy using `docker run` .
