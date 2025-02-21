@@ -2,7 +2,7 @@
 
 ## **Project Overview**
 
-This project sets up a **CI/CD pipeline** using **Jenkins and Docker** for a **Node.js application**. 
+This project sets up a **CI/CD pipeline** using **Jenkins and Docker** . 
 It automates code integration, testing, containerization, and deployment.
 
 ## **Technologies Used**
@@ -10,7 +10,6 @@ It automates code integration, testing, containerization, and deployment.
 - **Jenkins** – Automates CI/CD
 - **Docker** – Containerizes the application
 - **Git & GitHub** – Version control
-- **Node.js & npm** – Application runtime and package manager
 - **AWS EC2** – Cloud deployment
 
 ---
@@ -19,10 +18,9 @@ It automates code integration, testing, containerization, and deployment.
 
 1. **Code Commit** – Developer pushes code to GitHub.
 2. **Jenkins Trigger** – Detects changes and starts the pipeline.
-3. **Install & Test** – Runs `npm install`, lints code, and tests.
-4. **Build Docker Image** – Creates a Docker container.
-5. **Push Image** – Uploads the Docker image to Docker Hub.
-6. **Deploy App** – Runs the app on AWS EC2 or Kubernetes.
+3. **Build Docker Image** – Creates a Docker container.
+4. **Push Image** – Uploads the Docker image to Docker Hub.
+5. **Deploy App** – Runs the app on AWS EC2 .
 
 ---
 
@@ -37,10 +35,9 @@ It automates code integration, testing, containerization, and deployment.
 
 - Write a `Jenkinsfile` with:
   1. **Clone Code** – Pulls from GitHub.
-  2. **Install Dependencies** – Runs `npm install`.
-  3. **Build Docker Image** – Creates and tags the image.
-  4. **Push to Docker Hub** – Uploads the image.
-  5. **Deploy App** – Deploys to AWS EC2 or Kubernetes.
+  2. **Build Docker Image** – Creates and tags the image.
+  3. **Push to Docker Hub** – Uploads the image.
+  4. **Deploy App** – Deploys to AWS EC2
 
 ### **3. Use Docker for Deployment**
 
